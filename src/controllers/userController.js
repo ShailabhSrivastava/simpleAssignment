@@ -1,11 +1,9 @@
 const bcrypt = require("bcrypt");
 const userModel = require("../models/userModel");
 const {
-  isValidObjectId,
   isValidEmail,
   isValidName,
-  isValidPhone,
-  isValidRequestBody,
+  isValidPhone
 } = require("../validators/validation");
 const jwt = require("jsonwebtoken");
 

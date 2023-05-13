@@ -16,14 +16,6 @@ const isValidPhone = function (phone) {
   return false;
 };
 
-const isValidRequestBody = function (requestBody) {
-  if (Object.keys(requestBody).length > 0) return true;
-  return false;
-};
-
-const isValidObjectId = function (objectId) {
-  return mongoose.Types.ObjectId.isValid(objectId);
-};
 
 const isValid = function (value) {
   if (typeof value === "undefined" || value === null) return false;
@@ -35,7 +27,5 @@ module.exports = {
   isValid,
   isValidEmail,
   isValidName,
-  isValidPhone,
-  isValidRequestBody,
-  isValidObjectId,
+  isValidPhone
 };
