@@ -7,7 +7,7 @@ app.use(express.json());
 
 mongoose
   .connect(
-    "mongodb+srv://ShailabhSrivastava:LtR74yQBXKkSdvyd@cluster0.cxb6bki.mongodb.net/CompanyAssignment",
+    "mongodb+srv://ShailabhSrivastava:LtR74yQBXKkSdvyd@cluster0.cxb6bki.mongodb.net/simpleAssignment",
     {
       useNewUrlParser: true,
     }
@@ -21,6 +21,6 @@ app.all("/*", function (req, res) {
   res.status(404).send({ status: false, message: "Incorrect URL" });
 });
 
-app.listen(process.env.PORT || 3000, function () {
-  console.log("Express app running on port " + (process.env.PORT || 3000));
+app.listen(3000, function () {
+  console.log("Express app running on port " + (3000));  
 });
