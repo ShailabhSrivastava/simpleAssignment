@@ -6,11 +6,7 @@ const userSchema = new mongoose.Schema(
     lname: { type: String, required: true },
     email: { type: String, required: true, unique: true },
     phone: { type: String, required: true, unique: true },
-    password: { type: String, required: true },
-    isDeleted: {
-      type: Boolean,
-      default: false,
-    },
+    password: { type: String, required: true }
   },
   { timestamps: true }
 );
